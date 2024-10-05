@@ -1,0 +1,19 @@
+<div class="conteiner">
+    <form (ngSubmit)="editar(formulario)" #formulario ="ngForm">
+        Ingresar id
+        <input type="text" name="id"  [(ngModel)]="id" class="form-control" >
+    
+        Ingresar nombre
+        <input type="text" name="nombre" [(ngModel)]="nombre" class="form-control">
+    
+        Ingresar categoria
+        <input type="text" name="categoria" [(ngModel)]="categoria" class="form-control" >
+    
+        Ingresar precio
+        <input type="text" name="precio" [(ngModel)]="precio" class="form-control">
+    
+        <button class="btn btn primary" type="submit">Guardar</button>
+    </form>
+    </div>
+    
+    

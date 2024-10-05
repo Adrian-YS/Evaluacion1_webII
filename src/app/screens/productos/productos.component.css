@@ -1,0 +1,69 @@
+/* Estilos para el contenedor principal */
+.conteiner {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Estilos del formulario */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Etiquetas y campos de entrada */
+  form input[type="text"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  form input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Estilos del botón */
+  form button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  form button[type="submit"]:active {
+    transform: scale(0.98);
+  }
+  
+  /* Estilos adicionales para etiquetas */
+  form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilos para dispositivos móviles */
+  @media (max-width: 600px) {
+    .conteiner {
+      padding: 20px;
+    }
+  
+    form input[type="text"], form button[type="submit"] {
+      font-size: 14px;
+    }
+  }
+  

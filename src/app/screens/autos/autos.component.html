@@ -1,0 +1,30 @@
+<div>
+    <form #formulario="ngForm" (ngSubmit)="buscar(formulario)">
+      <input class="form-control mr-sm-2" name="id" [(ngModel)]="id" type="search" placeholder="Ingrese el  ID" aria-label="Search" required>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  
+    <table class="table">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>nombre</th>
+          <th>categoria</th>
+          <th>precio</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (item of auto; track item) {
+         
+        <tr>
+          <td>{{item.id}}</td>
+          <td>{{item.nombre}}</td>
+          <td>{{item.categoria}}</td>
+          <td>{{item.precio}}</td>
+         
+        </tr>
+      }
+  
+      </tbody>
+    </table>
+  </div>

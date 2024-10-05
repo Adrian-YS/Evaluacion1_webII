@@ -1,0 +1,22 @@
+{
+    "auto": [
+      {
+        "id": 1,
+        "nombre": "Ford",
+        "categoria": "Edge",
+        "precio": "300"
+      },
+      {
+        "id": 2,
+        "nombre": "Ferrari",
+        "categoria": "Formula 1",
+        "precio": "800"
+      },
+      {
+        "id": 3,
+        "nombre": "Nissan",
+        "categoria": "Versa",
+        "precio": "189"
+      }
+    ]
+  }
